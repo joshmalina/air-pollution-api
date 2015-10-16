@@ -15,5 +15,9 @@ def index():
 	#return flask.json.jsonify({'predictions':frcast.df})
 	return json.jsonify(frcast.df)
 
+@app.route('/')
+def f():
+	return 'cats'
+
 if __name__ == '__main__':
 	app.run(debug=True)
